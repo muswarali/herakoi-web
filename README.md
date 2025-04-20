@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 🎵 Herakoi Sonification App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an interactive **ReactJS application** that uses **MediaPipe Hands** and **Tone.js** to turn index finger position into sound based on background image color.
 
-## Available Scripts
+## 🧠 Features
 
-In the project directory, you can run:
+- 🖐️ Detects only the **right hand**
+- 🎯 Tracks the **index fingertip** (landmark 8)
+- 🖼️ Upload any image to use as background
+- 🎶 Sonifies fingertip color (Hue → pitch, Value → volume)
+- 📷 Uses **MediaPipe Hands** 
+- 🎵 Built with **Tone.js** for real-time sound synthesis
+- 🎨 Styled using **Material UI (MUI)**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the Repository
 
-### `npm test`
+```bash
+git clone https://github.com/muswarali/herakoi-web.git
+cd herakoi-sonification
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Install Dependencies
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Start the App
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will open at [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React](https://reactjs.org/)
+- [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands)
+- [Tone.js](https://tonejs.github.io/)
+- [Material UI](https://mui.com/)
+- [React Webcam](https://www.npmjs.com/package/react-webcam)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧑‍💻 Folder Structure
 
-## Learn More
+```
+src/
+├── components/        # UI components (Canvas, Controls, Header)
+├── hooks/             # Custom hook for hand detection
+├── img/               # Background sample images
+├── App.js             # Main app structure
+├── theme.js           # MUI Theme config
+├── index.js           # Entry point
+├── public/index.html  # Main HTML file
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌍 Live Demo
 
-### Code Splitting
+> Coming soon via Vercel or Netlify deployment 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
