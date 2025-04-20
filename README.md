@@ -1,4 +1,4 @@
-# 🎵 Herakoi Sonification App
+# 🎵 Herakoi Sonification Web App
 
 This is an interactive **ReactJS application** that uses **MediaPipe Hands** and **Tone.js** to turn index finger position into sound based on background image color.
 
