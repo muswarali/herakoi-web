@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  herakoi:
+    build:
+      context: .
+      dockerfile: production.Dockerfile
+    ports:
+      - "8090:80"  # Maps container's 80 to host's 8080
