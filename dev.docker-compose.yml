@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  herakoi-dev:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - "3001:3000" # Maps container's 3000 to host's 4000
+    volumes:
+      - .:/app
+      - /app/node_modules  # Prevents wiping out node_modules
+    command: npm start
